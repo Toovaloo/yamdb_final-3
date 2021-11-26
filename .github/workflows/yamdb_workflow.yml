@@ -17,12 +17,12 @@ jobs:
       - name: Prepare tests
         run: |
           rm -rf /api_yamdb/tests
-          cp pytest.ini /api_yamdb/pytest.ini
-          cp -a tests/ /api_yamdb/tests
+          cp pytest.ini api_yamdb/pytest.ini
+          cp -a tests/ api_yamdb/tests
 
       - name: Install dependencies
         run: |
-          cd /api_yamdb
+          cd api_yamdb/
           python -m pip install --upgrade pip
           pip install flake8 pep8-naming flake8-broken-line flake8-return flake8-isort
           pip install -r requirements.txt
