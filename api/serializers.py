@@ -1,7 +1,6 @@
 from django.contrib.auth import get_user_model
 from rest_framework import serializers
 from rest_framework.validators import UniqueValidator
-
 from reviews.models import Category, Comments, Genre, Review, Title
 
 from .validate import validate_year
