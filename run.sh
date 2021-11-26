@@ -1,9 +1,8 @@
-rm -f /app/pytest.ini
-rm -rf /app/tests
+rm -f api_yamdb/pytest.ini
+rm -rf api_yamdb/tests
 
-cp pytest.ini /app/pytest.ini
-cp -a tests/ /app/tests
+cp pytest.ini api_yamdb/pytest.ini
+cp -a tests/ api_yamdb/tests
 
-cd /app
-pip3 install -r requirements.txt
+cd api_yamdb
 pytest --tb=line 1>&2
