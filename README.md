@@ -2,6 +2,8 @@
 
 Учебный проект курса Python-разработчик на Яндекс.Практикум.
 
+![example workflow](https://github.com/bayborodin/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+
 ## Описание проекта YaMDb
 
 Проект **YaMDb** собирает **отзывы** (**Review**) пользователей на
