@@ -58,7 +58,7 @@ jobs:
             cd ${{ secrets.PROJECT_DIR }}
             docker pull nbayborodin/yamdb:latest
             docker-compose stop
-            docker-compose rm web
+            docker-compose rm -f web
             touch .env
             rm .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
