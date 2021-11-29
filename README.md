@@ -89,6 +89,10 @@ docker pull nbayborodin/api_yamdb:v23.11.2021
 
 Николай Байбородин ([Twitter](https://twitter.com/bayborodin) | [GitHub](https://github.com/bayborodin) | [Telegram](https://t.me/nbayborodin))
 
+## Демо
+
+[yamdb.bayborodin.ru](http://yamdb.bayborodin.ru)
+
 ## Лицензия
 
 Данный проект распространяется под лицензией [MIT](http://opensource.org/licenses/MIT).
