@@ -55,9 +55,10 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
+            cd ${{ secrets.PROJECT_DIR }}
             docker pull nbayborodin/yamdb:latest
-            docker-compose stop
-            docker-compose rm web
+            docker compose stop
+            docker compose rm web
             touch .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
             echo DB_NAME=${{ secrets.DB_NAME }} >> .env
@@ -68,7 +69,7 @@ jobs:
             echo SECRET_KEY=${{ secrets.SECRET_KEY }} >> .env
             echo HOSTNAMES=${{ secrets.HOSTNAMES }} >> .env
             echo DEBUG=${{ secrets.DEBUG }} >> .env
-            docker-compose up -d
+            docker compose up -d
 
   send_message:
     runs-on: ubuntu-latest
