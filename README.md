@@ -91,7 +91,7 @@ docker pull nbayborodin/api_yamdb:v23.11.2021
 
 ## Демо
 
-[yamdb.bayborodin.ru](http://yamdb.bayborodin.ru)
+[yamdb.bayborodin.ru](https://yamdb.bayborodin.ru)
 
 ## Лицензия
 
